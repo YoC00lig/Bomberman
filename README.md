@@ -14,8 +14,3 @@ In the game, one player controls their character's movements using the W A S D k
 
 <img src = "readme/demo.gif">
 
-# 👩🏼‍💻 Authors: 
-<ul>
-  <li> <a href ="https://github.com/irosikoni"> Izabella Rosikoń</a></li>
-  <li> <a href ="https://github.com/YoC00lig"> Joanna Kulig</a></li>
-</ul>
