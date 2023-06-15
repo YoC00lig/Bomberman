@@ -1,0 +1,27 @@
+{
+	"BUILD_DIR" : "/Users/joannakulig/CLionProjects/Bomberman2/cmake-build-debug/bomberman2_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/joannakulig/CLionProjects/Bomberman2/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/joannakulig/CLionProjects/Bomberman2/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/joannakulig/CLionProjects/Bomberman2",
+	"CMAKE_SOURCE_DIR" : "/Users/joannakulig/CLionProjects/Bomberman2",
+	"INCLUDE_DIR" : "/Users/joannakulig/CLionProjects/Bomberman2/cmake-build-debug/bomberman2_autogen/include",
+	"INPUTS" : 
+	[
+		"/Users/joannakulig/CLionProjects/Bomberman2/img/player2.png",
+		"/Users/joannakulig/CLionProjects/Bomberman2/img/bomb.png",
+		"/Users/joannakulig/CLionProjects/Bomberman2/img/player1.png",
+		"/Users/joannakulig/CLionProjects/Bomberman2/img/wall.png",
+		"/Users/joannakulig/CLionProjects/Bomberman2/img/brick.png",
+		"/Users/joannakulig/CLionProjects/Bomberman2/img/explosion.png"
+	],
+	"LOCK_FILE" : "/Users/joannakulig/CLionProjects/Bomberman2/cmake-build-debug/CMakeFiles/bomberman2_autogen.dir/AutoRcc_images_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "images" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_images.cpp",
+	"RCC_EXECUTABLE" : "/Users/joannakulig/opt/anaconda3/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/joannakulig/CLionProjects/Bomberman2/cmake-build-debug/CMakeFiles/bomberman2_autogen.dir/AutoRcc_images_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/joannakulig/CLionProjects/Bomberman2/images.qrc",
+	"VERBOSITY" : 0
+}
