@@ -9,6 +9,11 @@ This repository contains own, simple implementation of the "Bomberman" game. The
 </ul>
 
 # 🎮 Game Demo:
+
+When the game begins, players are presented with a character selection screen and a field to enter their names. Simple instructions for gameplay are also provided. At the bottom, there's a button that, when pressed, starts the game.
+
+<img src = "readme/start.png">
+
 In the game, one player controls their character's movements using the W A S D keys and strategically lays down bombs by pressing the E key. The second player, on the other hand, navigates their character using the I J K L keys and strategically places a bomb using the O key. The outcome of the game is determined by the player who meets their demise first, which occurs when they find themselves in close proximity to an exploding bomb.
 
 
