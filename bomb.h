@@ -4,13 +4,13 @@
 #include <QObject>
 #include <QGraphicsPixmapItem>
 #include <QTimer>
-#include "destructiblewall.h"
 #include <QApplication>
 #include <QCoreApplication>
 #include <QGraphicsTextItem>
 #include <QGraphicsProxyWidget>
 #include <QPushButton>
 #include <QGraphicsView>
+#include <QProcess>
 
 
 
@@ -28,13 +28,17 @@ public:
 private slots:
     void explode();
     void handleExplosionFinished();
+    void handlePlayButton();
 
 signals:
     void expired();
 
 private:
     QTimer* timer;
+    QAction *actionReboot;
+    QGraphicsScene* resultScene;
     Explosion* explosion;
+    QPushButton* playButton;
     void handleExitButtonClicked();
 
 };

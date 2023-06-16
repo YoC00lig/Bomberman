@@ -5,7 +5,6 @@
 #include <QGraphicsPixmapItem>
 #include <QGraphicsScene>
 #include <QTimer>
-#include "destructiblewall.h"
 
 class QGraphicsScene;
 class DestructibleWall;

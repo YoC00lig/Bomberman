@@ -1,6 +1,7 @@
 #include "bomb.h"
 #include <QPixmap>
 #include <QGraphicsScene>
+#include "destructiblewall.h"
 #include "explosion.h"
 #include "player.h"
 #include "QDebug"
@@ -44,7 +45,7 @@ void Bomb::explode()
     }
 
     if (died) {
-        QGraphicsScene* resultScene = new QGraphicsScene();
+        resultScene = new QGraphicsScene();
         resultScene->setBackgroundBrush(Qt::black);
 
         QGraphicsTextItem* message = new QGraphicsTextItem();
@@ -54,6 +55,19 @@ void Bomb::explode()
         message->setPos(100, 100);
         resultScene->addItem(message);
 
+        playButton = new QPushButton();
+        playButton->setText("Play again?");
+        playButton->setGeometry(QRect(290,420,100,47));
+        connect(playButton, &QPushButton::clicked, this, &Bomb::handlePlayButton);
+
+//        resultScene->addWidget(playButton);
+//        actionReboot = new QAction( this );
+//        actionReboot->setText( tr("Restart") );
+//        actionReboot->setStatusTip( tr("Restarts the application") );
+//        connect( actionReboot, SIGNAL (triggered()),
+//                this, SLOT (slotReboot())
+//                );
+
         scene()->setParent(nullptr);
         scene()->deleteLater();
         scene()->views().first()->setScene(resultScene);
@@ -62,6 +76,12 @@ void Bomb::explode()
     scene()->removeItem(this);
     deleteLater();
 }
+
+void Bomb::handlePlayButton()
+{
+
+//    resultScene->addWidget(actionReboot);
+    }
 
 void Bomb::handleExitButtonClicked()
 {

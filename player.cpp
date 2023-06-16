@@ -1,10 +1,10 @@
 #include "player.h"
 #include <QGraphicsScene>
 
-Player::Player(int playerNumber, QGraphicsScene* scene, QGraphicsItem *parent)
+Player::Player(int playerNumber, int monsterNumber, QGraphicsScene* scene, QGraphicsItem *parent)
     : QObject(), QGraphicsPixmapItem(parent), playerNumber(playerNumber)
 {
-    QPixmap playerImage(":/img/player" + QString::number(playerNumber) + ".png");
+    QPixmap playerImage(":/img/player" + QString::number(monsterNumber) + ".png");
     setPixmap(playerImage.scaled(50, 50));
     setFlag(QGraphicsItem::ItemIsFocusable);
     setFlag(QGraphicsItem::ItemIsMovable);

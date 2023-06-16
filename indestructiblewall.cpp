@@ -1,4 +1,4 @@
-#include "IndestructibleWall.h"
+#include "indestructiblewall.h"
 
 IndestructibleWall::IndestructibleWall(int row, int column, QGraphicsItem* parent)
     : QGraphicsPixmapItem(parent)

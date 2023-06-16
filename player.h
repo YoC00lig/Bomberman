@@ -16,7 +16,7 @@ class Player : public QObject, public QGraphicsPixmapItem
 {
     Q_OBJECT
 public:
-    explicit Player(int playerNumber, QGraphicsScene* scene, QGraphicsItem *parent = nullptr);
+    explicit Player(int playerNumber, int monsterNumber, QGraphicsScene* scene, QGraphicsItem *parent = nullptr);
     void keyPressEvent(QKeyEvent *event) override;
     void placeBomb();
     QString getPlayerName();
