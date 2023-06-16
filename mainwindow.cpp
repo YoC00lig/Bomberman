@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    setWindowTitle("Bomberman Game");
+    setWindowTitle("Bombermonster Game");
 
 
     startScene = new QGraphicsScene();
@@ -30,29 +30,35 @@ MainWindow::MainWindow(QWidget *parent)
 
     startScene->setBackgroundBrush(QBrush(QColor(245, 230, 230)));
 
-    placeMessage("WELCOME TO BOMBERMONSTER!", 120, 60, 20);
-    placeMessage("Choose your character and start the fight!", 120, 100, 18);
-    placeMessage("Player1 moves:", 40, 220, 12);
-    placeMessage("A: left, W: up, D: right, S: down", 40, 240, 12);
-    placeMessage("E: boooom!", 40, 270, 12);
-    placeMessage("Player2 moves:", 320, 220, 12);
-    placeMessage("J: left, I: up, L: right, K: down", 320, 240, 12);
-    placeMessage("O: boooom!", 320, 270, 12);
+    placeMessage("WELCOME TO BOMBERMONSTER!", 100, 60, 20);
+    placeMessage("Choose your character and start the fight!", 90, 100, 18);
+    placeMessage("Player1 moves:", 110, 320, 12);
+    placeMessage("A: left, W: up, D: right, S: down", 80, 340, 12);
+    placeMessage("E: boooom!", 110, 370, 12);
+    placeMessage("Player2 moves:", 420, 320, 12);
+    placeMessage("J: left, I: up, L: right, K: down", 380, 340, 12);
+    placeMessage("O: boooom!", 420, 370, 12);
 
-    placeMonster(1, 100, 160);
-    placeMonster(2, 170, 160);
-    placeMonster(3, 240, 160);
-    placeMonster(4, 310, 160);
-    placeMonster(5, 380, 160);
-    placeMonster(6, 450, 160);
+    placeMonster(1, 120, 160);
+    placeMessage("0", 130, 205, 12);
+    placeMonster(2, 190, 160);
+    placeMessage("1", 200, 205, 12);
+    placeMonster(3, 260, 160);
+    placeMessage("2", 270, 205, 12);
+    placeMonster(4, 330, 160);
+    placeMessage("3", 340, 205, 12);
+    placeMonster(5, 400, 160);
+    placeMessage("4", 410, 205, 12);
+    placeMonster(6, 470, 160);
+    placeMessage("5", 480, 205, 12);
 
-    chooseMonster1 = new QLineEdit();
-    chooseMonster2 = new QLineEdit();
-    chooseMonster1->setGeometry(QRect(180, 300, 80, 40));
-    chooseMonster2->setGeometry(QRect(390, 300, 80, 40));
+    chooseMonster1 = new QLineEdit("1");
+    chooseMonster2 = new QLineEdit("2");
+    chooseMonster1->setGeometry(QRect(180, 240, 20, 20));
+    chooseMonster2->setGeometry(QRect(390, 240, 20, 20));
 
-//    connect(chooseMonster2, SIGNAL(QLineEdit::textChanged), this, SLOT(MainWindow::validateNumber));
-//    connect(chooseMonster1, SIGNAL(QLineEdit::textChanged), this, SLOT(MainWindow::validateNumber));
+    connect(chooseMonster2, SIGNAL(QLineEdit::textChanged), this, SLOT(MainWindow::validateNumber));
+    connect(chooseMonster1, SIGNAL(QLineEdit::textChanged), this, SLOT(MainWindow::validateNumber));
 
 
     startScene->addWidget(chooseMonster1);

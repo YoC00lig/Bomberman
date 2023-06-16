@@ -51,16 +51,16 @@ void Bomb::explode()
         QGraphicsTextItem* message = new QGraphicsTextItem();
         message->setPlainText("The " + survivingPlayer->getPlayerName() + " survived!");
         message->setDefaultTextColor(Qt::black);
-        message->setFont(QFont("Arial", 24));
+        message->setFont(QFont("Chilanka", 24));
         message->setPos(100, 100);
         resultScene->addItem(message);
 
         playButton = new QPushButton();
         playButton->setText("Play again?");
-        playButton->setGeometry(QRect(290,420,100,47));
-        connect(playButton, &QPushButton::clicked, this, &Bomb::handlePlayButton);
+        playButton->setGeometry(QRect(230,420,100,47));
+        connect(playButton, SIGNAL("&QPushButton::clicked"), this, SLOT("&Bomb::handlePlayButton"));
 
-//        resultScene->addWidget(playButton);
+        resultScene->addWidget(playButton);
 //        actionReboot = new QAction( this );
 //        actionReboot->setText( tr("Restart") );
 //        actionReboot->setStatusTip( tr("Restarts the application") );
@@ -79,6 +79,8 @@ void Bomb::explode()
 
 void Bomb::handlePlayButton()
 {
+    qDebug() << "Exit button clicked!";
+    QApplication::quit();
 
 //    resultScene->addWidget(actionReboot);
     }
