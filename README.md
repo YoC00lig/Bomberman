@@ -6,6 +6,7 @@ This repository contains own, simple implementation of the "Bomberman" game. The
   <li> QT6 (Cute6) framework </li>
   <li> Cmake </li>
   <li> C++ </li>
+  <li> Icons: <a href="https://www.flaticon.com/free-icons/monster" title="monster icons">Monster icons created by Smashicons - Flaticon</a> </li>
 </ul>
 
 # 🎮 Game Demo:
